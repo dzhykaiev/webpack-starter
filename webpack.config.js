@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TerserJSPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-
+const CopyPlugin = require("copy-webpack-plugin");
 // TODO: add copy paste (fonts, imgs)
 
 module.exports = (env, argv) => {
@@ -38,7 +38,8 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         template: "./src/index.html",
         hash: true
-      })
+      }),
+      new CopyPlugin([{ from: "./src/assets/img", to: "./img" }])
     ],
     output: {
       filename: "[name].bundle.js",
