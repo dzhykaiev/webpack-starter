@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Webpack Starter</title>
-</head>
-<body>
-  <h1>Webpack Starter</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Webpack Starter</title>
+  </head>
+  <body>
+    <h1>Form components</h1>
+    <form class="container">
+      <label>
+        <div class="label">
+          <span>Normal</span>
+          <span></span>
+        </div>
+        <input type="text" placeholder="Input text" />
+      </label>
+      <label>
+        <div class="label">
+          <span>Normal with Label</span>
+          <span>Label</span>
+        </div>
+        <input type="text" placeholder="Input text" />
+      </label>
+      <label>
+        <div class="label">
+          <span>Focus</span>
+          <span></span>
+        </div>
+        <input type="text" placeholder="Input text" />
+      </label>
+      <label>
+        <div class="label">
+          <span>Error label</span>
+          <span></span>
+        </div>
+        <div class="error-message">This doesn’t look like a valid email</div>
+        <input type="text" placeholder="first.last@l" />
+      </label>
+      <label>
+        <div class="label">
+          <span>Validated</span>
+          <span></span>
+        </div>
+        <input class="valid" type="text" placeholder="Input text" />
+      </label>
+
+      <div class="field radio">
+        <label>
+          Unselected
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label>
+          Selected
+          <input type="radio" name="radio" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="field checkbox">
+        <label>
+          Unselected
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <label>
+          Selected
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="field radio">
+        <label>
+          Unselected
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label>
+          Unselected
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <div class="error-message">Please select an option</div>
+      </div>
+
+      <div class="field checkbox">
+        <label>
+          Unselected
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <label>
+          Unselected
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <label>
+          Unselected
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <div class="error-message">Please select an option</div>
+      </div>
+    </form>
+  </body>
 </html>
